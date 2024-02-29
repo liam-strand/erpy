@@ -1,4 +1,4 @@
-from typing import Union, List, Any
+from typing import Union, List
 
 
 class BaseTerm:
@@ -17,4 +17,4 @@ class BaseRef(BaseTerm):
 
 
 # Type AnyTerm includes Erlang type wrappers + compatible Python types
-Term = Union[str, List[Any], tuple, dict, int, float, bytes, BaseTerm, None]
+Term = Union[str, List["Term"], tuple, dict, int, float, bytes, BaseTerm, None]
