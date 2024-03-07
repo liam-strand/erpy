@@ -1,10 +1,11 @@
 [project]
 name = "erpy"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
   { name="Liam Strand", email="strandliam@gmail.com" },
 ]
-description = "A small example package"
+description = "Leverages the existing Term package to implement a simple Erlang
+port driver that communicates over standard input and output."
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
@@ -14,8 +15,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
-Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "https://github.com/liam-strand/erpy"
+Issues = "https://github.com/liam-strand/erpy/issues"
+Repository = "https://github.com/liam-strand/erpy"
 
 [build-system]
 requires = ["setuptools"]

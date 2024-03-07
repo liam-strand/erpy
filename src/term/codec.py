@@ -12,7 +12,6 @@ LOG = logging.getLogger("term")
 try:
     import term.native_codec_impl as co_impl
 except ImportError:
-    LOG.warning("Native term ETF codec library import failed, falling back to slower Python impl")
     import term.py_codec_impl as co_impl
 
 
