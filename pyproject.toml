@@ -4,8 +4,7 @@ version = "0.1.1"
 authors = [
   { name="Liam Strand", email="strandliam@gmail.com" },
 ]
-description = "Leverages the existing Term package to implement a simple Erlang
-port driver that communicates over standard input and output."
+description = "Leverages the existing Term package to implement a simple Erlang port driver that communicates over standard input and output."
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
