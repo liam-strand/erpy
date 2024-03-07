@@ -23,4 +23,29 @@ it `:)`.
 
 ## Basic Communication over STDIO
 
-TODO!
+### Sending Messages From Python
+
+```python
+from erpy import stdio_port_connection
+
+inbox, port = stdio_port_connection()
+for i in range(100):
+    port.send(i)
+
+```
+
+### Receiving Messages In Python
+
+```python
+from erpy import stdio_port_connection
+from term import Atom
+
+inbox, port = stdio_port_connection()
+
+for msg in inbox:
+    if msg == Atom("close"):
+        break
+    
+    with open("output.txt", "a") as f:
+        print(f"got {msg}", file=f)
+```
